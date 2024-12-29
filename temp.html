@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Display</title>
+    <style>
+        /* CSS פנימי */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .book-container {
+            text-align: center;
+            background-color: #e1e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        .book-container h1 {
+            font-size: 24px;
+            color: #2a2a72;
+            margin-bottom: 10px;
+        }
+
+        .book-container .book-cover {
+            width: 200px;
+            height: 300px;
+            background-color: #ffe135; /* צבע כריכה */
+            border: 2px solid #000;
+            margin: 15px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-cover .top-section {
+            height: 25%; /* החלק הלבן יהיה בגובה של 25% */
+            background-color: #fff; /* צבע לבן */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* יישור למטה */
+            align-items: flex-end; /* יישור לימין */
+            padding-right: 20px;
+            font-size: 5px; /* גודל גופן 5px */
+            line-height: 1.2;
+            text-align: right; /* יישור טקסט לימין */
+            padding-bottom: 10px;
+        }
+
+        .book-cover .middle-section {
+            height: 25%; /* החלק האפור יהיה בגובה של 25% */
+            background-color: #d3d3d3; /* צבע אפור */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; /* יישור לימין */
+            padding-right: 20px;
+        }
+
+        .book-cover .bottom-section {
+            height: 50%; /* החלק הצהוב יהיה בגובה של 50% */
+            background-color: #ffe135; /* צבע צהוב */
+            display: flex;
+            justify-content: flex-end; /* יישור לימין */
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        .js-text {
+            font-size: 100px; /* הגדלת הגודל */
+            font-weight: bold;
+            color: black; /* צבע הטקסט */
+        }
+
+        .scope-closures {
+            font-size: 18px; /* גודל טקסט מתאים */
+            font-weight: bold;
+            color: black;
+            line-height: 1.2;
+        }
+
+        .kyle-simpson {
+            font-size: 18px; /* גודל טקסט זהה ל-SCOPE & CLOSURES */
+            font-weight: bold;
+            color: black;
+            line-height: 1.2;
+            text-align: right; /* יישור לימין */
+        }
+
+        .book-container h2 {
+            font-size: 20px;
+            color: black;
+            margin: 10px 0;
+        }
+
+        .book-container p {
+            font-size: 10px;
+            color: black;
+            margin: 10px 0;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* סטייל נוסף לפסקה */
+        .top-section p {
+            font-size: 7px; /* שומר על גודל קטן של הפסקה */
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <h1>Book Component By Function</h1>
+        <div class="book-cover">
+            <div class="top-section">
+                <p>This is a very small paragraph.<br>
+                It will stay within the white section.<br>
+                Font size is only 5px.</p>
+                <div class="kyle-simpson">
+                    KYLE SIMPSON
+                </div>
+            </div>
+            <div class="middle-section">
+                <div class="scope-closures">
+                    SCOPE &<br>CLOSURES
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="js-text">JS</div>
+            </div>
+        </div>
+        <h3>By Kyle Simpson</h3>
+        <p>Parts of the language that many JavaScript programmers simply avoid.</p>
+        <footer>
+            <p>© 2021 Tania</p>
+        </footer>
+    </div>
+</body>
+</html>
